@@ -1,0 +1,34 @@
+@import "../../../wxss/common.wxss";
+
+.container{
+    padding: 44rpx 0 34rpx 30rpx;
+    background-color: #ffffff;
+    margin-top: 20rpx;
+    width: 100%;
+}
+
+.inner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-image{
+    width: 690rpx;
+}
+
+.left-image{
+    width: 344rpx;
+    display: flex;
+}
+
+.right-top-image{
+    width: 400rpx;
+    display: flex;
+}
+
+.right-bottom-image{
+    margin-top: 7rpx;
+    width: 400rpx;
+    display: flex;
+}

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="top-theme-A" wx:if="{{themeA.online}}" mode='widthFix' src="{{themeA.entrance_img}}"></image>
+  <swiper class="swiper" indicator-dots="{{true}}" indicator-color="#157658" autoplay="{{true}}" circular="{{true}}">
+      <block wx:for="{{bannerB.items}}" wx:key="item">
+          <swiper-item>
+              <image class="swiper" src="{{item.img}}">
+              </image>
+          </swiper-item>
+      </block>
+  </swiper>
+  <s-category-grid grid="{{grid}}"></s-category-grid>
+  <image class="theme-image"  wx:if="{{activity.online}}" src="{{activity.entrance_img}}" mode="widthFix"></image>
+  <s-spu-scroll l-class="spu-scroll" theme="{{themeE}}" spu-scroll="{{themeESPU}}" wx:if="{{themeE.online}}"></s-spu-scroll>
+  <image class="theme-image"  wx:if="{{themeF.online}}" src="{{themeF.entrance_img}}" mode="widthFix"></image>
+  <s-hot-list banner="{{bannerG}}"></s-hot-list>
+  <image class="theme-image"  wx:if="{{themeH.online}}" src="{{themeH.entrance_img}}" mode="widthFix"></image>
+    <l-water-flow generic:l-water-flow-item="s-water-flow-content"/>
+  <view class="bottom-interesting-container">
+       <view class="" hover-class="small-hover" hover-stay-time="200">
+          <image class="bottom-interesting-top-image" src="../../img/home/title@interesting.png" mode="widthFix"></image>
+       </view>
+       <l-water-flow generic:l-water-flow-item="s-spu-preview" column-gap="1rpx"/>
+  </view>
+  <l-loadmore show="{{true}}" type="{{spuLoadmoreType}}" end-text="已经到底了" loading-text="玩命加载中"></l-loadmore>
+</view>
+

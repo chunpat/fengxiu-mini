@@ -1,0 +1,55 @@
+/* demo.wxss */
+  .container{
+    box-shadow:0rpx 0rpx 8rpx 0rpx rgba(119,163,149,0.2);
+    margin-bottom: 30rpx;
+  }
+
+  .life-container {
+    width: 340rpx !important;
+    padding: 0 0 20rpx 0 !important;
+    background-color: #fff !important;
+    overflow: hidden;
+  }
+  
+  .life-product-contianer {
+    padding: 0 7rpx;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .life-title {
+    margin-left: 10rpx !important;
+  }
+  
+  .tag-content{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tag-item{
+    margin-right: 12rpx;
+  }
+
+  .title-content {
+    font-size: 28rpx !important;
+    color: #333333 !important;
+    margin-top: 22rpx !important;
+    margin-left: 16rpx !important;
+  }
+  
+  .price-content{
+    margin-top: 4rpx;
+  }
+
+  .deleted-price-content{
+    margin-top: 6rpx;
+    margin-left: 6rpx;
+  }
+
+  .text-content{
+    font-family:Helvetica;
+    color: #999999;
+    font-size: 24rpx;
+  }
+
+ 

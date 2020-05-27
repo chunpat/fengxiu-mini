@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="" hover-class="small-hover" hover-stay-time="200">
+        <image class="title-image" src="{{banner.img}}" mode="widthFix"></image>
+    </view>
+    <view class="inner-container" >
+        <view class="" hover-class="react-hover" hover-stay-time="200">
+          <image class="left-image" src="{{leftImage.img}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <view class="">
+          <view class="" hover-class="react-hover" hover-stay-time="200">
+              <image class="right-top-image" src="{{rightTopImage.img}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+          </view>
+          <view class="" hover-class="react-hover" hover-stay-time="200">
+              <image class="right-bottom-image" src="{{rightBottomImage.img}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+          </view>
+        </view>
+    </view>
+</view>

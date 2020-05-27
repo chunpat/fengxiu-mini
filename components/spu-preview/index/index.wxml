@@ -1,0 +1,18 @@
+<wxs src="../../../wxs/price.wxs" module="p"></wxs>
+
+<view class="container">
+  <l-card full type="cover" image="{{spu.img}}" image-mode='widthFix' title="{{spu.title}}" l-class="life-container" l-title-class="title-content" bindtap="onProduct">
+    <view class='life-product-contianer'>
+      <view class="tag-content" wx:if="{{tags}}">
+        <block wx:for="{{tags}}" wx:key="item">
+          <l-tag type="reading" class="tag-item" size="super-mini" bg-color="#DCEBE6" font-color="#157658" >{{item}}</l-tag>
+        </block>
+      </view>
+      <view>
+        <l-price l-class = "price-content" unit="￥" unit-size="32" value="{{p.mainPrice(spu.price,spu.discount_price).price}}" value-color="#157658" unit-color="#157658" value-size="32"></l-price>
+        <l-price wx:if="{{p.slashedPrice(spu.price,spu.discount_price).display}}" deleted l-class = "deleted-price-content" unit="￥" unit-size="24" value="{{p.slashedPrice(spu.price,spu.discount_price).price}}" value-color="#999999" unit-color="#999999" value-size="24"></l-price>
+       </view>
+      <text class="text-content" selectable="false" space="false" decode="false">{{spu.subtitle}}</text>
+    </view>
+  </l-card>
+</view>

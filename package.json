@@ -1,0 +1,17 @@
+{
+  "name": "fengxiu-mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@vant/weapp": "^1.2.2",
+    "_lin-ui@0.7.6@lin-ui": "^0.7.6",
+    "lin-ui": "^0.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

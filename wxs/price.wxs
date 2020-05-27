@@ -1,0 +1,29 @@
+function mainPrice(price,discountPirce){
+    if(!discountPirce){
+        return {
+            display:true,
+            price:price
+        }
+    }
+    return {
+        display:true,
+        price:discountPirce
+    }
+}
+
+function slashedPrice(price,discountPirce){
+    if(discountPirce){
+        return {
+            display:true,
+            price:price
+        }
+    }
+    return {
+        display:false
+    }
+}
+
+module.exports = {
+    mainPrice:mainPrice,
+    slashedPrice:slashedPrice,
+}

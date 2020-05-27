@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/demo/demo",
+    "pages/logs/logs"
+  ],
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "l-card": "lin-ui/card/index",
+    "l-grid": "lin-ui/grid/index",
+    "l-grid-item": "lin-ui/grid-item/index",
+    "l-price": "lin-ui/price/index",
+    "l-icon": "lin-ui/icon/index",
+    "l-tag": "lin-ui/tag/index",
+    "l-loadmore":"lin-ui/loadmore/index"
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "onReachBottomDistance":50
+  },
+  "sitemapLocation": "sitemap.json"
+}
