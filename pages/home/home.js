@@ -1,10 +1,10 @@
 //index.js
 
-import { Theme } from "../../model/theme"
-import { Banner } from "../../model/banner";
-import { Category } from "../../model/category";
-import { Activity } from "../../model/activity";
-import { Spu } from "../../model/spu";
+import { Theme } from "../../models/theme"
+import { Banner } from "../../models/banner";
+import { Category } from "../../models/category";
+import { Activity } from "../../models/activity";
+import { Spu } from "../../models/spu";
 
 //获取应用实例
 const app = getApp()
@@ -44,10 +44,12 @@ Page({
     if(themeE.online){
        themeESPU = themeE.spu_list.slice(0,5)
     }
+    console.log('themeESPU',themeESPU)
     var bannerB = await Banner.getHomeBannerB();
     var bannerG = await Banner.getHomeBannerG();
     var grid = await Category.getHomeCategory();
     var activity = await Activity.getHomeActivity();
+
     this.setData({
       themeA:themeA,
       themeE:themeE,
@@ -63,6 +65,7 @@ Page({
   async initSpuPaging(){
     this.spu = new Spu();
     var spu = await this.spu.getHomeSpu();
+    console.log('spu',spu)
     wx.lin.renderWaterFlow(spu.items)
   },
   tapName: function (event) {

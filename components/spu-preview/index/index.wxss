@@ -1,10 +1,11 @@
 /* demo.wxss */
+@import "../../../wxss/common.wxss";
   .container{
     box-shadow:0rpx 0rpx 8rpx 0rpx rgba(119,163,149,0.2);
     margin-bottom: 30rpx;
   }
 
-  .life-container {
+  .spu-image {
     width: 340rpx !important;
     padding: 0 0 20rpx 0 !important;
     background-color: #fff !important;

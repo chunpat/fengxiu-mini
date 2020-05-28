@@ -3,7 +3,7 @@ import { Http } from '../utils/http';
 import { Paging } from '../utils/paging';
 
 class Spu{
-    count = 3;
+    count = 5;
     start = 0;
     spuLoadmoreType = "loading";
     isLoadmoreFinish = false;
@@ -27,6 +27,10 @@ class Spu{
       console.log('sss');
       return spu;
         // return Paging.request(`spu/latest`);      
+    }
+
+    static getSpuDetail(id){
+      return Http.request(`spu/id/${id}/detail`)
     }
 }
 
