@@ -9,7 +9,7 @@ Component({
   methods: {
     onSpuDetail: function(event) {
       console.log('event',event)
-      wx.redirectTo({
+      wx.navigateTo({
         url: '/pages/detail/detail?id=' + event.currentTarget.dataset.id
       });;
     }

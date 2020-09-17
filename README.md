@@ -37,6 +37,20 @@ for(i=1;i <= count(arr); i++){
     height:100%;
 }
 ```
+## 跨组件冒泡
+子组件专递给父组件
+```js
+methods:{
+    onTap(event){
+        this.triggerEvent('celltap',{
+            cell:value
+        }),{
+            bubbles:true, //支持一直冒泡
+            composed:true //支持一直冒泡两个缺一不可
+        }
+    }
+}
+```
 
 ## 注意
 ~小程序代码最大2M~
