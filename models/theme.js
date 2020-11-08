@@ -10,7 +10,7 @@ class Theme{
     themes = [];
 
     async getTheme() {
-        const names = `${Theme.locationA},${Theme.locationE},${Theme.locationF},${Theme.locationH},,${Theme.locationI}` 
+        const names = `${Theme.locationA},${Theme.locationE},${Theme.locationF},${Theme.locationH}` 
         this.themes = await Http.request(
           `theme/by/names`,
           {

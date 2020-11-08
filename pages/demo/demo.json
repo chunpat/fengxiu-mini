@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "water-flow":"lin-ui/water-flow/index",
-    "l-demo": "../components/water-flow/index"
+    "water-flow":"lin-ui/water-flow/index"
   }
 }

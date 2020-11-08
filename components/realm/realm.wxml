@@ -1,0 +1,11 @@
+<view class="container">
+  <view>
+      <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+        
+      </image>
+  </view>
+  <block wx:for="{{fenceGroup}}" wx:key="index">
+    <s-fence fence="{{item}}" bind:celltap="onCellTap"></s-fence>
+  </block>
+      
+</view>

@@ -1,6 +1,5 @@
 # 微信小程序商城
 
-
 ## ui组件
 Lin UI: http://doc.mini.talelin.com/
 
@@ -12,12 +11,12 @@ $arr = [
     [5,6,7,8],
     [9,10,11,12]
 ]
-
-for(i=1;i <= count(arr); i++){
-    for(j){
-        $arr[j][] = 
+//行变列 列变行
+for(j=1;j <= count(arr); i++){
+    let newArray = []
+    for(i=1;i <= count(arr[0]); i++){
+        newArray[j][] = $arr[j][i] 
     }
-
 }
 
 ## Css 盒模型
@@ -37,6 +36,11 @@ for(i=1;i <= count(arr); i++){
     height:100%;
 }
 ```
+## 对象处理数据，存储数据
+
+## 组件冒泡
+文档
+https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html
 
 ## 注意
 ~小程序代码最大2M~
