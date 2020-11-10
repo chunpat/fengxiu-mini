@@ -23,7 +23,6 @@ class SkuCode{
                 this.codes.push(item)
             })
         }
-        console.log('this.codes',this.codes)
     }
 }
 

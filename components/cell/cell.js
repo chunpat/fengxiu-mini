@@ -5,7 +5,6 @@ Component({
   },
   methods: {
     celltap(event){
-      console.log('this.properties.cell',this.properties.cell)
       this.triggerEvent('celltap',{
           cell:this.properties.cell
       },{
@@ -13,10 +12,5 @@ Component({
           composed:true
       })
     }
-    // onTap(event){
-    //   this.triggerEvent('celltap',{
-
-    //   })
-    // }
   }
 })

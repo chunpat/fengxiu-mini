@@ -18,17 +18,14 @@ class FenceGroup{
         let fence = this._createFence()
         matrix.forEach((element,i,j)=>{
            if(current !== j){
-             console.log('j',j)
              current = j
              fenceGroup[j] = this._createFence()
            }
            fenceGroup[j].pushValueTitle(element.value)
         });
-        console.log(fenceGroup)
     }
 
     initFences(){
-        console.log('fence')
         const matrix = this._createMatrix(this.skuList)
         let current = -1
         let fenceGroup = []
@@ -39,7 +36,6 @@ class FenceGroup{
             fenceGroup.push(fence)
         });
         this.value = fenceGroup
-        console.log('fenceGroup',fenceGroup)
     }
 
     _createFence(){
