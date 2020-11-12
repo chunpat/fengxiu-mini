@@ -56,6 +56,7 @@ class Judger{
 
     _changeOtherCellStatus(currentCell,currentIndex){
         this._fencesForEach((cell,x,y)=>{
+            console.log('cell',cell)
             //排除已选
             if(this.cellsPendding.cells.includes(cell.id)){
                return ;
@@ -104,8 +105,9 @@ class Judger{
     }
 
     _fencesForEach(cb){
+        console.log('this.fenceGroup',this.fenceGroup)
         for (let x = 0; x < this.fenceGroup.length; x++) {
-            for (let y = 0; y < this.fenceGroup[0].cells.length; y++) {
+            for (let y = 0; y < this.fenceGroup[x].cells.length; y++) {
                 cb(this.fenceGroup[x].cells[y],x,y)
             }
         }

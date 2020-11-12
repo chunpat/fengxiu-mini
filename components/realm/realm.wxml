@@ -1,11 +1,26 @@
 <view class="container">
   <view>
-      <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
-        
+      <image class="sku-image" src="">
       </image>
+      <view class="sku-description" hover-class="none" hover-stop-propagation="">
+        <text class="" selectable="false" space="false" decode="false">
+            测试SKU
+        </text>
+        <view class="" hover-class="none" hover-stop-propagation="false">
+          <view class="" hover-class="none" hover-stop-propagation="false">
+              <l-price l-class = "price-content" unit="￥" unit-size="32" value="55" value-color="#157658" unit-color="#157658" value-size="32"></l-price>
+              <l-price wx:if="0" deleted l-class = "deleted-price-content" unit="￥" unit-size="24" value="666" value-color="#999999" unit-color="#999999" value-size="24"></l-price>
+          </view>
+          <view class="sku-pending" hover-class="none" hover-stop-propagation="false">
+            
+          </view>
+        </view>
+      </view>
   </view>
   <block wx:for="{{fences}}" wx:key="index">
     <s-fence fence="{{item}}" bind:celltap="onCellTap"></s-fence>
   </block>
-      
+  <view class="counter-container">
+    
+  </view>
 </view>
